@@ -1,0 +1,48 @@
+{
+  "tasks": [
+    {
+      "name": "Auto Battle",
+      "steps": [
+        {
+          "action": "click_image",
+          "image": "battle_button.png",
+          "timeout_seconds": 10,
+          "confidence": 0.8
+        },
+        {
+          "action": "click_image",
+          "image": "start_button.png",
+          "timeout_seconds": 10,
+          "confidence": 0.8
+        },
+        {
+          "action": "wait",
+          "seconds": 3
+        },
+        {
+          "action": "click_image",
+          "image": "victory_continue.png",
+          "timeout_seconds": 15,
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "name": "Collect Rewards",
+      "steps": [
+        {
+          "action": "click_image",
+          "image": "rewards_icon.png",
+          "timeout_seconds": 10,
+          "confidence": 0.8
+        },
+        {
+          "action": "click_image",
+          "image": "claim_button.png",
+          "timeout_seconds": 10,
+          "confidence": 0.8
+        }
+      ]
+    }
+  ]
+}
